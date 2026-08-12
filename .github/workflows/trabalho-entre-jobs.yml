@@ -35,7 +35,7 @@ jobs:
           name: strigus-upload
           # Destination path. Supports basic tilde expansion.
           # Optional. Default is $GITHUB_WORKSPACE
-          path: mensagem.txt
+          path: strigus
       
       - name: Ver o conteudo do diretorio
         run: ls -lha && ls ./strigus/
