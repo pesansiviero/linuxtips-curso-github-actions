@@ -15,7 +15,7 @@ jobs:
       - name: Exibir uma mensagem
         run: echo "Estou fazendo o curso de GitHub Actions da Linuxtips" > ${{ github.workspace }}/mensagem.txt
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v8
         with:
           name: strigus-upload
           path: ${{ github.workspace }}/mensagem.txt
@@ -27,7 +27,7 @@ jobs:
       - name: Ver o conteudo do diretorio
         run: ls -lha
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           # Name of the artifact to download.
           # If unspecified, all artifacts for the run are downloaded.
