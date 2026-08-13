@@ -1,7 +1,7 @@
 name: desafio-um
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
     inputs:
       nome-imagem: 
         description: "Nome da imagem Docker (ex: ubuntu:latest, alpine:latest)"
@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Baixa imagem
-        run: docker pull ${{ inputs.nome-imagem}}
+        run: docker pull ${{ inputs.nome-imagem }}
      
       - name: Verifica imagens
         run: docker images
