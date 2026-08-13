@@ -1,0 +1,16 @@
+name: desafio-um
+
+on:
+  workflow_dispatch
+
+jobs: 
+  giropops:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixa imagem
+        run: doocker pull alpine:latest
+     
+      - name: Verifica imagens
+        run: docker images
+        
+        
