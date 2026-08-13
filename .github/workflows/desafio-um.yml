@@ -20,7 +20,8 @@ jobs:
         run: docker images
         
       - name: Desafio adicional analisa vulnerabilidades com Docker Scout
-        uses: docker/scout-action@v1
-        with:
-          command: cves
-          image: ${{ inputs.nome-imagem }}
+        #uses: docker/scout-action@v1
+        #with:
+          #command: cves
+          #image: ${{ inputs.nome-imagem }}
+        run: docker scout quickview ${{ inputs.nome-imagem }}
