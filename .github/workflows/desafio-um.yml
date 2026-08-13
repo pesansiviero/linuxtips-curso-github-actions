@@ -6,7 +6,7 @@ on:
       nome-imagem: 
         description: "Nome da imagem Docker (ex: ubuntu:latest, alpine:latest)"
         required: true
-        default: 'alpine:latest'\
+        default: 'alpine:latest'
         type: string
 
 jobs: 
