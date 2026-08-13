@@ -4,11 +4,11 @@ on:
   workflow_dispatch
 
 jobs: 
-  giropops:
+  exercicio-um:
     runs-on: ubuntu-latest
     steps:
       - name: Baixa imagem
-        run: doocker pull alpine:latest
+        run: docker pull alpine:latest
      
       - name: Verifica imagens
         run: docker images
