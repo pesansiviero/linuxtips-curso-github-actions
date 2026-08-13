@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       validaImagemDocker:
-      description: 'Validação da imagem escolhida pelo usuário'
+      description: "Validação da imagem escolhida pelo usuário"
       required: false
       default: 'nginx:latest'
       type: string
