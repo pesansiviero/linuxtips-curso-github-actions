@@ -38,6 +38,6 @@ jobs:
         with: 
           image: ${{ github.event.inputs.validaImagemDocker }}
           only-severities: critical,high
-          command: quickview, cves, recomendations
+          command: quickview, cves, recommendations
 
            
